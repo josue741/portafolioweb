@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josué Carhuanina - Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Usaremos Google Fonts para la tipografía monoespaciada -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Portafolio.</a>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main container">
+        <!-- Sección Inicio (Hero) -->
+        <section id="inicio" class="hero section grid">
+            <div class="hero-content">
+                <span class="hero-greeting">HOLA, SOY</span>
+                <h1 class="hero-title">Josue Carhuanina</h1>
+                <p class="hero-subtitle">Desarrollador &nbsp; Full Stack.</p>
+                <p class="hero-description">
+                    Apasionado por crear experiencias digitales de alto impacto, combinando código eficiente con diseños intuitivos y atractivos.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Contrátame</a>
+                    <a href="cv.pdf" download class="btn btn-secondary">Descargar CV</a>
+                </div>
+                <div class="hero-social">
+                    <a href="#" target="_blank" class="social-icon">LinkedIn</a>
+                    <a href="#" target="_blank" class="social-icon">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="josue_image.png" alt="Foto de Josué Carhuanina" class="hero-img">
+                <!-- Efecto de icono neón flotante 
+                <div class="neon-icon-floating">
+                    <img src="logo-neon.png" alt="Icono Neón">
+                </div>-->
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="sobre-mi" class="sobre-mi section">
+            <div class="section-title-wrapper">
+                <span class="title-decor">[ _ ]</span>
+                <h2 class="section-title">Sobre Mí</h2>
+                <span class="title-decor">[ _ ]</span>
+            </div>
+            
+            <div class="sobre-mi-container grid">
+                <div class="about-code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre class="code-content">
+<code><span class="keyword">class</span> <span class="class-name">Desarrollador</span> {
+  constructor() {
+    <span class="variable">this</span>.nombre = <span class="string">'Josue'</span>;
+    <span class="variable">this</span>.pasion = <span class="string">'Tecnología'</span>;
+    <span class="variable">this</span>.enfoque = [<span class="string">'Frontend'</span>, <span class="string">'Backend'</span>, <span class="string">'UI/UX'</span>];
+  }
+
+  <span class="function">crear</span>(proyecto) {
+    <span class="keyword">return</span> <span class="variable">proyecto</span>.innovar();
+  }
+}</code>
+                    </pre>
+                </div>
+                <div class="about-text">
+                    <h3>Desarrollador apasionado por la <span class="highlight">tecnología</span></h3>
+                    <p>
+                        Con experiencia en el ciclo completo de desarrollo de software, desde la conceptualización y diseño hasta la implementación y despliegue. Me especializo en construir aplicaciones web modernas, escalables y centradas en el usuario. Mi enfoque combina la resolución técnica de problemas con una estética visual cuidada.
+                    </p>
+                    <div class="about-info grid">
+                        <div class="info-item"><span>Nombre:</span> Josué Carhuanina</div>
+                        <div class="info-item"><span>Email:</span> josue741@gmail.com</div>
+                        <div class="info-item"><span>Ubicación:</span> Lima, Perú</div>
+                        <div class="info-item"><span>Trabajo:</span>Full-time</div>
+                    </div>
+                    <a href="#proyectos" class="btn btn-primary">Ver Portafolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades" class="habilidades section">
+            <div class="section-title-wrapper">
+                <span class="title-decor">[ _ ]</span>
+                <h2 class="section-title">Mis Habilidades</h2>
+                <span class="title-decor">[ _ ]</span>
+            </div>
+
+            <div class="habilidades-container grid">
+                <!-- Frontend -->
+                <div class="skills-category">
+                    <h3 class="skills-subtitle"><span class="icon">{ }</span> Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">HTML5 <span class="skill-bar" style="width: 95%;"></span></div>
+                        <div class="skill-item">CSS3 (Sass) <span class="skill-bar" style="width: 90%;"></span></div>
+                        <div class="skill-item">JavaScript (ES6+) <span class="skill-bar" style="width: 90%;"></span></div>
+       
+                    </div>
+                </div>
+
+                <!-- Imagen Central Angular Neon -->
+                <div class="skills-central-img">
+                    <div class="neon-frame">
+                        <img src="laravel_logo.webp" alt="Angular Logo" class="angular-logo">
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skills-category">
+                    <h3 class="skills-subtitle"><span class="icon">/></span> Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">Wordpress <span class="skill-bar" style="width: 85%;"></span></div>
+                        
+                        <div class="skill-item">PHP (Laravel) <span class="skill-bar" style="width: 70%;"></span></div>
+                        <div class="skill-item">Bases de Datos (SQL/NoSQL) <span class="skill-bar" style="width: 85%;"></span></div>
+                        <div class="skill-item">APIs RESTful <span class="skill-bar" style="width: 90%;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="proyectos section">
+            <div class="section-title-wrapper">
+                <span class="title-decor">[ _ ]</span>
+                <h2 class="section-title">PORTAFOLIO</h2>
+                <span class="title-decor">[ _ ]</span>
+            </div>
+
+            <div class="proyectos-container grid">
+                <!-- Proyecto 1 (Grande) -->
+               
+                <!-- Proyecto 2 (Grande) -->
+                
+                <!-- Proyectos Pequeños (Grid de 4) -->
+                <div class="proyectos-pequenos-grid grid">
+
+                    <a href="https://www.infordata.com.pe">
+                        <article class="proyecto-card pequeno">
+                        <img src="infordat.png" alt="Miniatura Proyecto" class="proyecto-img">
+                        <div class="proyecto-info">
+                            <h4 class="proyecto-title">Infordata</h4>
+                        </div>
+                      </article>
+                  </a>
+
+                    <a href="https://www.vastec.com.pe">
+                        <article class="proyecto-card pequeno">
+                        <img src="vastec.png" alt="Miniatura Proyecto" class="proyecto-img">
+                        <div class="proyecto-info">
+                            <h4 class="proyecto-title">Vastec</h4>
+                        </div>
+                    </article>
+                </a>
+
+                    <a href="https://suolo.com/">
+                    <article class="proyecto-card pequeno">
+                        <img src="suolo.png" alt="Miniatura Proyecto" class="proyecto-img">
+                        <div class="proyecto-info">
+                            <h4 class="proyecto-title">Suolo</h4>
+                        </div>
+                    </article>
+                    </a>
+                    
+                    <a href="https://jchllantas.com.pe/">
+                    <article class="proyecto-card pequeno">
+                        <img src="jchllantas.png" alt="Miniatura Proyecto" class="proyecto-img">
+                        <div class="proyecto-info">
+                            <h4 class="proyecto-title">JCH Llantas</h4>
+                        </div>
+                    </article>
+                </a>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contacto section">
+            <div class="section-title-wrapper">
+                <span class="title-decor">[ _ ]</span>
+                <h2 class="section-title">Contacto</h2>
+                <span class="title-decor">[ _ ]</span>
+            </div>
+
+            <div class="contacto-container grid">
+                <div class="contacto-info">
+                    <h3>¿Tienes un proyecto en mente? Hablemos de las <span class="highlight">posibilidades</span>.</h3>
+                    <p>Estoy listo para escuchar tus ideas y convertirlas en realidad digital. Envíame un mensaje y te responderé lo antes posible.</p>
+                    <div class="contacto-directo">
+                        <p><strong>Email:</strong> josue741@gmail.com</p>
+                        <p><strong>Teléfono:</strong> +51 992 193 148</p>
+                    </div>
+                </div>
+                
+                <form class="contacto-form">
+                    <input type="text" placeholder="Tu Nombre" class="form-input">
+                    <input type="email" placeholder="Tu Email" class="form-input">
+                    <input type="text" placeholder="Asunto" class="form-input">
+                    <textarea placeholder="Tu Mensaje" class="form-input" rows="5"></textarea>
+                    <button type="submit" class="btn btn-primary full-width">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Josué Carhuanina. Todos los derechos reservados.</p>
+            <p class="footer-decor">_ [ Coded with care ] _</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
